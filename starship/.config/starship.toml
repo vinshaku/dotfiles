@@ -19,6 +19,7 @@ $java\
 $kotlin\
 $haskell\
 $python\
+$ruby\
 [](fg:teal bg:blue)\
 $docker_context\
 [](fg:blue bg:purple)\
@@ -97,7 +98,7 @@ RedHatEnterprise = "󱄛"
 show_always = true
 style_user = "bg:surface0 fg:text"
 style_root = "bg:surface0 fg:text"
-format = '[ $user ]($style)'
+format = ' Vinay ($style)'
 
 [directory]
 style = "fg:mantle bg:peach"
@@ -171,8 +172,13 @@ symbol = ""
 style = "bg:mantle"
 format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 
+[ruby]
+symbol = ""
+style = "bg:team"
+format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+
 [time]
-disabled = false
+disabled = true
 time_format = "%R"
 style = "bg:peach"
 format = '[[  $time ](fg:mantle bg:purple)]($style)'
